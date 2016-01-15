@@ -25,6 +25,7 @@ namespace {
 
 	int q;
 
+	// testing member initializers as well
 	B() : foo(), q(5) {}
 	A bar() { return foo; }
 	
@@ -37,6 +38,7 @@ int main() {
     A a;
     a.foo->foo.bar()->bar().foo;
     B().foo.foo->bar().bar()->foo;
+    // TODO: not supported yet
     (new B())->foo.foo;
 
     // also testing "foo& bar"

@@ -34,6 +34,7 @@ namespace {
 
 }
 
+// ref to static member
 int A::staticmember = 0;
 
 int main() {

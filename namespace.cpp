@@ -24,6 +24,7 @@ namespace RootNS {
     int L1::L2::A::m = 1;
 }
 
+
 // abs path
 void ::RootNS::L1::L2::A::bar() {
     ::RootNS::L1::L2::A::m = 2;
